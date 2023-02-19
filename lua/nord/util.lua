@@ -26,13 +26,13 @@ end
 
 -- Change the background for the terminal, packer and qf windows
 util.contrast = function()
-	vim.cmd([[augroup nord]])
-	vim.cmd([[  autocmd!]])
-	vim.cmd([[  autocmd ColorScheme * lua require("nord.util").onColorScheme()]])
-	vim.cmd([[  autocmd TermOpen * setlocal winhighlight=Normal:NormalFloat,SignColumn:NormalFloat]])
-	vim.cmd([[  autocmd FileType packer setlocal winhighlight=Normal:NormalFloat,SignColumn:NormalFloat]])
-	vim.cmd([[  autocmd FileType qf setlocal winhighlight=Normal:NormalFloat,SignColumn:NormalFloat]])
-	vim.cmd([[augroup end]])
+	-- vim.cmd([[augroup nord]])
+	-- vim.cmd([[  autocmd!]])
+	-- vim.cmd([[  autocmd ColorScheme * lua require("nord.util").onColorScheme()]])
+	-- vim.cmd([[  autocmd TermOpen * setlocal winhighlight=Normal:NormalSidebar,SignColumn:NormalSidebar]])
+	-- vim.cmd([[  autocmd FileType packer setlocal winhighlight=Normal:NormalSidebar,SignColumn:NormalSidebar]])
+	-- vim.cmd([[  autocmd FileType qf setlocal winhighlight=Normal:NormalSidebar,SignColumn:NormalSidebar]])
+	-- vim.cmd([[augroup end]])
 end
 -- Loads the colors from the dictionary Object (colorSet)
 function util.loadColorSet(colorSet)

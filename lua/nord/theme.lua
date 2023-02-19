@@ -199,9 +199,9 @@ theme.loadEditor = function()
 
 	-- Remove window split borders
 	if vim.g.nord_borders then
-		editor.VertSplit = { fg = nord.nord2_gui }
+		editor.VertSplit = { fg = nord.nord0_gui_original, bg = nord.none }
 	else
-		editor.VertSplit = { fg = nord.nord0_gui }
+		editor.VertSplit = { fg = nord.nord0_gui, bg = nord.none }
 	end
 
 	if vim.g.nord_uniform_diff_background then
@@ -856,14 +856,18 @@ theme.loadPlugins = function()
 	-- Disable nvim-tree background
 	if vim.g.nord_disable_background then
 		plugins.NvimTreeNormal = { fg = nord.nord4_gui, bg = nord.none }
+		plugins.DapUINormal = { fg = nord.nord4_gui, bg = nord.none }
 	else
 		plugins.NvimTreeNormal = { fg = nord.nord4_gui, bg = nord.sidebar }
+		plugins.DapUINormal = { fg = nord.nord4_gui, bg = nord.sidebar }
 	end
 
 	if vim.g.nord_enable_sidebar_background then
 		plugins.NvimTreeNormal = { fg = nord.nord4_gui, bg = nord.sidebar }
+		plugins.DapUINormal = { fg = nord.nord4_gui, bg = nord.sidebar }
 	else
 		plugins.NvimTreeNormal = { fg = nord.nord4_gui, bg = nord.none }
+		plugins.DapUINormal = { fg = nord.nord4_gui, bg = nord.none }
 	end
 
 	return plugins

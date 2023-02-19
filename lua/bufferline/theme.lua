@@ -1,12 +1,12 @@
 local colors = require("nord.colors")
 
 local setting = {
-	fill = colors.nord0_gui,
+	fill = colors.nord17_gui,
 	indicator = colors.nord9_gui,
-	bg = colors.nord0_gui,
+	bg = colors.nord17_gui,
 	buffer_bg = colors.nord0_gui,
-	buffer_bg_selected = colors.nord1_gui,
-	buffer_bg_visible = "#2A2F3A",
+	buffer_bg_selected = colors.nord0_gui,
+	buffer_bg_visible = colors.nord17_gui,
 	bold = true,
 	italic = true,
 }
@@ -41,8 +41,8 @@ M.highlights = function(new_setting)
 			italic = italic,
 		},
 		buffer_visible = {
+            fg = colors.nord4_gui,
 			bg = buffer_bg_visible,
-			italic = italic,
 		},
 
 		numbers = {

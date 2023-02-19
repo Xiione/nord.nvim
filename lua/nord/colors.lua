@@ -1,7 +1,10 @@
 local named_colors = require("nord.named_colors")
 
 local dark_colors = {
-	nord0_gui = named_colors.black, -- nord0 in palette
+    nord17_gui = named_colors.darkest_black, -- CUSTOM
+    nord16_gui = named_colors.darker_black, -- CUSTOM
+    nord0_gui_original = named_colors.black, -- CUSTOM
+	nord0_gui = named_colors.darker_black, -- CUSTOM
 	nord1_gui = named_colors.dark_gray, -- nord1 in palette
 	nord2_gui = named_colors.gray, -- nord2 in palette
 	nord3_gui = named_colors.light_gray, -- nord3 in palette
@@ -48,8 +51,8 @@ local nord = (vim.o.background == "dark") and dark_colors or light_colors
 
 -- Enable contrast sidebars, floating windows and popup menus
 if vim.g.nord_contrast then
-	nord.sidebar = nord.nord1_gui
-	nord.float = nord.nord1_gui
+	nord.sidebar = nord.nord17_gui
+	nord.float = nord.nord0_gui
 else
 	nord.sidebar = nord.nord0_gui
 	nord.float = nord.nord0_gui
