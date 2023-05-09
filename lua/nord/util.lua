@@ -32,6 +32,7 @@ util.contrast = function()
 	vim.cmd([[  autocmd TermOpen * setlocal winhighlight=Normal:NormalSidebar,SignColumn:NormalSidebar]])
 	vim.cmd([[  autocmd FileType packer setlocal winhighlight=Normal:NormalSidebar,SignColumn:NormalSidebar]])
 	vim.cmd([[  autocmd FileType qf setlocal winhighlight=Normal:NormalSidebar,SignColumn:NormalSidebar]])
+	vim.cmd([[  autocmd FileType vimtex-toc setlocal winhighlight=Normal:NormalSidebar,SignColumn:NormalSidebar]])
 	vim.cmd([[augroup end]])
 end
 -- Loads the colors from the dictionary Object (colorSet)
