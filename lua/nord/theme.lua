@@ -456,7 +456,7 @@ theme.loadPlugins = function()
 		diffAdded = { fg = nord.nord14_gui },
 		diffRemoved = { fg = nord.nord11_gui },
 		diffChanged = { fg = nord.nord15_gui },
-		diffOldFile = { fg = nord.yelow },
+		diffOldFile = { fg = nord.yellow },
 		diffNewFile = { fg = nord.nord12_gui },
 		diffFile = { fg = nord.nord7_gui },
 		diffLine = { fg = nord.nord3_gui },
@@ -690,6 +690,15 @@ theme.loadPlugins = function()
 		rainbowcol5 = { fg = nord.nord8_gui },
 		rainbowcol6 = { fg = nord.nord15_gui },
 		rainbowcol7 = { fg = nord.nord13_gui },
+
+		-- rainbow-delimiters.nvim
+                RainbowDelimiterRed = { fg = nord.nord11_gui },
+                RainbowDelimiterYellow = { fg = nord.nord13_gui },
+                RainbowDelimiterBlue = { fg = nord.nord9_gui },
+                RainbowDelimiterOrange = { fg = nord.nord12_gui },
+                RainbowDelimiterGreen = { fg = nord.nord14_gui },
+                RainbowDelimiterCyan = { fg = nord.nord8_gui },
+                RainbowDelimiterViolet = { fg = nord.nord15_gui },
 
 		-- lightspeed
 		LightspeedLabel = { fg = nord.nord8_gui, style = bold },
