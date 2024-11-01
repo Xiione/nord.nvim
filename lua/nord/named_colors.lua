@@ -1,7 +1,7 @@
 local nord = {
 	--16 colors
-    darkest_black = "#1e2128", -- CUSTOM
-    darker_black = "#272c36", -- CUSTOM
+    darkest_black = "#191D24", -- CUSTOM
+    darker_black = "#222630", -- CUSTOM
 	black = "#2E3440", -- nord0 in palette
 	dark_gray = "#3B4252", -- nord1 in palette
 	gray = "#434C5E", -- nord2 in palette
